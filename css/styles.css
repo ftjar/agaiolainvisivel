@@ -10,6 +10,28 @@ body {
     background: linear-gradient(135deg, #f2e8dc 0%, #e6d3c6 100%);
 }
 
+.hero-background-suave {
+    /* 1. A imagem é a base, no fundo */
+    background-image: url('../img/fundo-bg.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Essencial para a sobreposição funcionar */
+    z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+}
+
+.hero-background-suave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* 3. gradiente com 85% de opacidade */
+    background: linear-gradient(135deg, rgba(242, 232, 220, 0.85) 0%, rgba(230, 211, 198, 0.85) 100%);
+    z-index: -1; /* Coloca a camada de cor entre o fundo e o conteúdo */
+}
+
 .gradient-text {
     background: linear-gradient(135deg, #f2e8dc 0%, #e6d3c6 100%);
     -webkit-background-clip: text;
