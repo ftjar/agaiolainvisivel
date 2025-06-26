@@ -59,13 +59,11 @@ body {
     background: linear-gradient(135deg, #5fae66 0%, #2aca6a 100%);
 }
 
-/* Substituição de roxo para marrom suave */
-.text-purple-600 {
+/* marrom suave */
+.text-brown {
     color: #5B4233 !important;
 }
 
-.hover\:text-purple-300:hover {
+.hover\:text-brown-300:hover {
     color: #7c5d4a !important;
 }
-
-/* Mantendo os tons de cinza e branco originais */
