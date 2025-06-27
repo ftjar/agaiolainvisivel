@@ -63,7 +63,7 @@ function initTrackingScripts() {
     console.log("Consentimento dado. Inicializando Google Tag Manager...");
 
     // Substitua 'GTM-XXXXXXX' pelo ID do contêiner do GTM
-    const gtmId = 'GTM-XXXXXXX'; 
+    const gtmId = 'GTM-K64SLZ6M';
 
     // ===================================================================
     // GOOGLE TAG MANAGER
