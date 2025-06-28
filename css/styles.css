@@ -32,6 +32,19 @@ body {
     z-index: -1; /* Coloca a camada de cor entre o fundo e o conteúdo */
 }
 
+@media (max-width: 480px) {
+    .hero-background-suave {
+    /* 1. A imagem é a base, no fundo */
+    background-image: url('../img/fundo-bg.webp');
+    background-size: 185% 100%;
+    /* background-size: cover; */
+    /* background-position: 70% 25%; */
+    position: relative; /* Essencial para a sobreposição funcionar */
+    z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
+    }
+}
+
+
 .cta-background-suave {
     /* 1. A imagem é a base, no fundo */
     background-image: url('../img/fundo-bg2.webp');
@@ -110,16 +123,4 @@ body {
 
 .hover\:text-brown-300:hover {
     color: #7c5d4a !important;
-}
-
-@media (max-width: 480px) {
-    .hero-background-suave {
-    /* 1. A imagem é a base, no fundo */
-    background-image: url('../img/fundo-bg.webp');
-    background-size: 190% 100%;
-    /* background-size: cover; */
-    /* background-position: 70% 25%; */
-    position: relative; /* Essencial para a sobreposição funcionar */
-    z-index: 1; /* Garante que o conteúdo fique acima da sobreposição */
-    }
 }
